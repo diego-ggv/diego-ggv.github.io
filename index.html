@@ -19,13 +19,13 @@
         crossorigin="anonymous">
 
   <!--   Custom Styles -->
-  <link href="css/app.css">
+  <link rel="stylesheet" href="css/app.css">
 
 </head>
 
 <body class=" container">
 
-<!--  navbar-->
+<!--  navbar -->
 <nav class="navbar navbar-expand-md">
   <div class="container flex-row-reverse text-end">
 
@@ -39,7 +39,6 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-
     <div id="navbar" class="collapse navbar-collapse justify-content-end">
       <div class="navbar-nav ">
         <a class="nav-item nav-link" href="#">Home
@@ -50,45 +49,53 @@
     </div>
 
   </div>
-</nav><!--  /navbar-->
+</nav><!--  /navbar -->
 
-<!--    Name header-->
-<div class="container">
+<!--    Name header -->
+<div class="container mt-md-5">
 
-  <span class="d-inline-flex rounded text-bg-dark px-3"></span>
-    <h1 class=" display-1">Hola
-      <strong class="text-warning ps-1 fw-semibold">!</strong>
-      <span id="typedGreeting"></span></h1>
+  <div class="display-1 d-inline-flex ps-3 stamp-dark ">
+    <h1 class="display-1 text-white my-0 hola "><span id="typedGreeting"></span></h1>
 
+    <!--    <h1 class="display-1 text-white my-0 hola ">Hola<span class="text-warning fw-bold">!-->
+    <!--    </span><span-->
+    <!--        id="typedGreeting"></span>-->
+    <!--    </h1>-->
 
-  <h1 class="display-1">I'm Diego,
-    <span id="typedName"></span></h1>
+  </div>
 
-  <p class="lead ms-5">a Front End Developer
-    <span id="typedFrontEnd"></span></p>
+  <div class="max-content ms-3">
+    <p class="display-1 my-2"><span id="typedName"></span></p>
+    <p class="h5 text-end"><span id="typedFrontEnd"></span></p>
+  </div>
 
-</div><!--  /name header-->
+  <!--  <div class="max-content ms-3">-->
+  <!--    <p class="display-1 my-2">I'm Diego,<span id="typedName"></span></p>-->
+  <!--    <p class="h5 text-end">a Front End-->
+  <!--      Developer<span id="typedFrontEnd"></span></p>-->
+  <!--  </div>-->
 
+</div><!--  /name header  -->
 
 <main>
-  <div class="main-container">
+  <div class="">
 
 
   </div>
 </main>
 
 
-<!--  Bootstraps scripts-->
+<!--  Bootstraps scripts  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
         crossorigin="anonymous"></script>
 
-<!--  Popper-->
+<!--  Popper  -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
 
-<!--  Typed-->
+<!--  Typed.js -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
 <!--  app.js-->
