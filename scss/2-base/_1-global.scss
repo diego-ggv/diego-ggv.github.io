@@ -1,0 +1,21 @@
+// ===========
+// Base Layout
+// ===========
+
+* {
+  // Without box-sizing, the width property represents
+  // the content area of the element
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cutive Mono', monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}

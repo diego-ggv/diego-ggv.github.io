@@ -1,0 +1,26 @@
+//  ===============
+//  Color Variables
+//  ===============
+$color-prim-light: rgb(116, 119, 191);
+$color-prim-dark: rgb(77, 76, 114);
+$color-sec-dark: lighten($color-prim-dark, 45%);
+$color-sec-light: lighten($color-prim-light, 35%);
+$color-font-light: rgb(255, 255, 255);
+$color-font-dark: rgba(255, 255, 255, 0.50);
+$color-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+$color-light-green: rgb(125, 194, 139);
+$color-close-x: rgba(255, 0, 0, 0.62);
+
+//  ============
+//  Breakpoints
+//  ============
+$breakpoints: (
+        'mobile'  : 320px,
+        'tablet'  : 768px,
+        'desktop' : 1024px,
+);
+
+//  ======
+//  Dividers
+//  ======
+$border: 2px solid $color-sec-dark;
