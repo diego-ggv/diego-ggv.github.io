@@ -44,10 +44,16 @@
 
     <div id="navbar" class="collapse navbar-collapse justify-content-end">
       <div class="navbar-nav ">
-        <a class="nav-link" href="index.html#work">Work
-          <span class="visually-hidden">(current)</span></a>
+        <a class="nav-link" href="index.html#work">Work</a>
+
         <a class="nav-link" href="#">About</a>
-        <a id="modal" class="nav-link">Contact</a>
+        <span class="visually-hidden">(current)</span>
+
+        <a id="contact"
+           class="nav-link pointer"
+           data-bs-toggle="modal"
+           data-bs-target="#exampleModal">Contact</a>
+
       </div>
     </div>
 
@@ -88,7 +94,7 @@
     <h3 class="display-5 border-bottom border-3 border-warning max-content">Hi</h3>
 
     <p class="">I’m a front end developer, graphic designer, and a lifelong learner. I love sharing
-      knowledge to help others to create a better community.</p>
+      knowledge to help others create a better community.</p>
 
     <p class="">Lorem ipsum dolor sit amet, consec- tetuer adipiscing elit, sed diam nonummy nibh
       euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
@@ -171,149 +177,58 @@
 
 </div><!--  /about -->
 
-
 <!--  ================
         FORM MODAL
       ================  -->
 <!-- Modal -->
 <div class="modal fade"
-     id="register"
+     id="exampleModal"
      tabindex="-1"
-     role="dialog"
-     aria-labelledby="register form"
+     aria-labelledby="exampleModalLabel"
      aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header bg-info text-white">
-        <h5 class="modal-title" id="exampleModalLabel">Register for Full Stack Conf</h5>
+  <div class="modal-dialog">
+    <div class="modal-content modal-align">
+      <div class="my-3">
+        <h1 class="modal-title fs-5 text-center mx-auto"
+            id="exampleModalLabel">Interested in<br>working together?</h1>
         <button type="button"
-                class="close"
-                data-dismiss="modal"
-                aria-label="Close">
-          <span aria-hidden="true">&times;</span>
+                id="x"
+                class="btn btn-outline-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close">X
         </button>
       </div>
-      <div class="modal-body">
-        <!--  registration form -->
-        <form>
-          <div class="alert alert-warning alert-dismissible fade show" role="alert">
-            <strong>Hurry!</strong> Early bird registration ends in two days.
-            <button type="button"
-                    class="btn-close"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"></button>
-          </div>
-          <h5 class="mb-4">Basic Info</h5>
-          <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" class="form-control" id="name">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email">
-          </div>
-          <div class="form-group">
-            <label for="role">Job Role:</label>
-            <select id="role" class="custom-select form-control">
-              <option value="full stack js developer">Full Stack JavaScript Developer</option>
-              <option value="front end developer">Front End Developer</option>
-              <option value="back end developer">Back End Developer</option>
-              <option value="designer">Designer</option>
-              <option value="student">Student</option>
-            </select>
-          </div>
+      <div class="mx-auto">
 
-          <hr class="my-4">
+        <!--  Modal Name -->
+        <input id="input-name"
+               class="form-control"
+               type="text"
+               placeholder="Name">
 
-          <h5 class="mb-4">Witch Topics Interest You Most?</h5>
-          <div class="form-check">
-            <div class="custom-control custom-checkbox">
-              <input id="frameworks" type="checkbox" class="custom-control-input">
-              <label for="frameworks" class="custom-control-label">JavaScript Frameworks</label>
-            </div>
-          </div>
+        <!--  Modal Email -->
+        <input id="input-email"
+               class="form-control my-3"
+               type="email"
+               placeholder="Email">
 
-          <div class="form-check">
-            <div class="custom-control custom-checkbox">
-              <input id="libraries" type="checkbox" class="custom-control-input">
-              <label for="libraries" class="custom-control-label">JavaScript Libraries</label>
-            </div>
-          </div>
+        <!--  Modal Message -->
+        <textarea id="input-message"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Message"></textarea>
 
-          <div class="form-check">
-            <div class="custom-control custom-checkbox">
-              <input id="tools" type="checkbox" class="custom-control-input">
-              <label for="tools" class="custom-control-label">Build Tools</label>
-            </div>
-          </div>
+      </div>
+      <div class="d-flex my-4">
+        <button type="button" class="btn btn-outline-warning mx-auto">
+          <span>Lets get in touch</span><span>!</span>
+        </button>
 
-          <div class="form-check">
-            <div class="custom-control custom-checkbox">
-              <input id="ES2015" type="checkbox" class="custom-control-input">
-              <label for="ES2015" class="custom-control-label">ES2015</label>
-            </div>
-          </div>
 
-          <hr class="mb-4">
-          <h5 class="mb-4">Payment Info</h5>
-
-          <div class="form-row">
-            <div class="col-lg-6 form-group">
-              <label for="cc-num">Card Number:</label>
-              <input class="form-control" id="cc-num" type="text">
-            </div>
-
-            <div class="col-lg form-group">
-              <label for="zip">Zip Code:</label>
-              <input class="form-control" id="zip" type="text">
-            </div>
-
-            <div class="col-lg form-group">
-              <label for="cvv">CVV:</label>
-              <input class="form-control" id="cvv" type="text">
-            </div>
-          </div>
-
-          <div class="form-row">
-            <label>Expiration Date:</label>
-            <div class="form-group col-lg-8">
-              <select class="custom-select form-control" id="exp-month">
-                <option value="1">1 - January</option>
-                <option value="2">2 - February</option>
-                <option value="3">3 - March</option>
-                <option value="4">4 - April</option>
-                <option value="5">5 - May</option>
-                <option value="6">6 - June</option>
-                <option value="7">7 - July</option>
-                <option value="8">8 - August</option>
-                <option value="9">9 - September</option>
-                <option value="10">10 - October</option>
-                <option value="11">11 - November</option>
-                <option value="12">12 - December</option>
-              </select>
-            </div>
-
-            <div class="form-group col-lg">
-              <select class="custom-select form-control" id="exp-year">
-                <option value="2016">2016</option>
-                <option value="2017">2017</option>
-                <option value="2018">2018</option>
-                <option value="2019">2019</option>
-                <option value="2020">2020</option>
-              </select>
-            </div>
-          </div>
-
-          <hr class="mb-4">
-
-          <button type="submit" class="btn btn-primary btn-lg">Register</button>
-
-        </form><!--  /registration form -->
       </div>
     </div>
   </div>
-</div>
-
+</div><!-- /Modal -->
 
 <!--  ===========
         Scripts

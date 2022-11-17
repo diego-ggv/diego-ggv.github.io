@@ -43,8 +43,13 @@
       <div class="navbar-nav ">
         <a class="nav-link" href="#work">Work
           <span class="visually-hidden">(current)</span></a>
+
         <a class="nav-link" href="about.html">About</a>
-        <a id="modal" class="nav-link">Contact</a>
+
+        <a id="contact"
+           class="nav-link pointer"
+           data-bs-toggle="modal"
+           data-bs-target="#exampleModal">Contact</a>
       </div>
     </div>
 
@@ -160,12 +165,54 @@
         FORM MODAL
       ================  -->
 <!-- Modal -->
+<div class="modal fade"
+     id="exampleModal"
+     tabindex="-1"
+     aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content modal-align">
+      <div class="my-3">
+        <h1 class="modal-title fs-5 text-center mx-auto"
+            id="exampleModalLabel">Interested in<br>working together?</h1>
+        <button type="button"
+                id="x"
+                class="btn btn-outline-danger"
+                data-bs-dismiss="modal"
+                aria-label="Close">X
+        </button>
+      </div>
+      <div class="mx-auto">
+
+        <!--  Modal Name -->
+        <input id="input-name"
+               class="form-control"
+               type="text"
+               placeholder="Name">
+
+        <!--  Modal Email -->
+        <input id="input-email"
+               class="form-control my-3"
+               type="email"
+               placeholder="Email">
+
+        <!--  Modal Message -->
+        <textarea id="input-message"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Message"></textarea>
+
+      </div>
+      <div class="d-flex my-4">
+        <button type="button" class="btn btn-outline-warning mx-auto">
+          <span>Lets get in touch</span><span>!</span>
+        </button>
 
 
-<!-- /Modal -->
-
-
-
+      </div>
+    </div>
+  </div>
+</div><!-- /Modal -->
 
 <!--  ===========
         Scripts
