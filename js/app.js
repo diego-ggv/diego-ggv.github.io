@@ -94,7 +94,7 @@ const cards = (array) => {
   for (let i = 0; i < array.length; i++) {
     html +=
       ` <!-- Project Card -->
-        <div class="card m-5 border-warning d-flex px-0" style="width: 18rem;">
+        <div class="hidden card m-5 border-warning d-flex px-0" style="width: 18rem;">
           <img src="media/images/thumbnails/${array[i].fileName}.png"
                class="card-img-top"
                alt="${array[i].fileName}">
@@ -158,11 +158,33 @@ const cards = (array) => {
   }
   return html;
 };
-
 gallery.insertAdjacentHTML('afterbegin', cards(imgArray));
 
 
-/*  ===================
- *     Event listeners
- *   ===================  */
+/*   ============
+ *     Observer
+ *   ============  */
 
+// const carousel = new bootstrap.Carousel('#myCarousel');
+let observerOptions = {
+  root: document.querySelector('#scrollArea'),
+  rootMargin: '0px',
+  threshold: .25,
+};
+
+const observer = new IntersectionObserver((entries) => { 
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
+    else {
+      entry.target.classList.remove('show');
+    }
+  });
+  },observerOptions,
+);
+
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach(
+  (e) => observer.observe(e),
+);
