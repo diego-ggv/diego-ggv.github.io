@@ -1,0 +1,11 @@
+.icon {
+  transition: 500ms cubic-bezier(.17,.67,.83,.67);
+  border: none;
+  border-radius: 5px;
+
+  &:hover {
+    transform: scale(1.2);
+    background-color: rgb(255, 193, 7);
+  }
+}
+

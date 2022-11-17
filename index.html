@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Portfolio</title>
   <!--  Favicon -->
-
+  <link rel="icon"
+        type="image/svg+xml"
+        href="media/icons/terminal.png">
   <!--  Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,12 +86,23 @@
 </div><!--  /name header  -->
 
 <!--  work-->
-<section id="work" class="container my-5">
-  <h2>Some of my most recent work</h2>
+<section id="work">
+
+  <div class="bg-warning text-light py-4">
+    <h2 class="display-5 text-center">Some of my most<br>
+      recent <span class="p-2 text-bg-dark fs-2 rounded">&lt;&#47;&gt;</span></h2>
+  </div>
+
+  <div id="gallery" class="row justify-content-center">
+    <!-- Dynamically added -->
+
+  </div>
 
 </section><!--  /work-->
 
-<!--  footer  -->
+<!--  ==========
+        Footer
+      ==========  -->
 <footer>
   <!--  Icons -->
   <div class="mb-4 mt-5 pt-5 sticky-bottom d-flex justify-evenly">
@@ -98,8 +111,8 @@
     <a class="ms-auto icon"
        target="_blank"
        href="https://discord.com/users/870180663356182538">
-      <svg id="discord" width="40"
-           height="40"
+      <svg id="discord" width="30"
+           height="30"
            data-name="discord"
            xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 62.47 51.75">
@@ -114,8 +127,8 @@
        target="_blank"
        href="https://treehouse-fewd-102.slack.com/team/U011BBSSLBW">
       <svg id="slack"
-           width="40"
-           height="40"
+           width="30"
+           height="30"
            data-name="Slack"
            xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 51.75 51.75">
@@ -129,8 +142,8 @@
     <a class="me-3 ms-2 icon"
        target="_blank" href="https://github.com/diego-ggv">
       <svg id="github"
-           width="40"
-           height="40"
+           width="30"
+           height="30"
            data-name="github"
            xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 52.64 52.42">
@@ -145,8 +158,8 @@
        target="_blank"
        href="https://www.linkedin.com/in/diego-ggv">
       <svg id="linkedin"
-           width="40"
-           height="40"
+           width="30"
+           height="30"
            data-name="Linkedin"
            xmlns="http://www.w3.org/2000/svg"
            viewBox="0 0 52.89 52.89">
@@ -157,7 +170,6 @@
     </a><!--  /Icons -->
 
   </div>
-
 
 </footer><!--  /footer  -->
 
@@ -217,7 +229,6 @@
 <!--  ===========
         Scripts
       =========== -->
-
 <!--  Bootstraps scripts  -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
