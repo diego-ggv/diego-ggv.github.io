@@ -1,7 +1,12 @@
-//  ========
-//  Typed.js
-//  ========
+
+/*  ============
+ *   variables
+ *  ============  */
 const solidStripe = document.getElementById('solid-stripe');
+
+/*  ===========
+ *   Typed.js
+ *  ===========  */
 
 // Greetings
 // ---------
@@ -43,4 +48,8 @@ const typedFrontEndOpt = {
 };
 const typedFrontEnd = new Typed('#typedFrontEnd', typedFrontEndOpt);
 
+
+/*  ===================
+*     Event listeners
+*   ===================  */
 
