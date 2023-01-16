@@ -64,7 +64,7 @@ const imgArray = [
     fileName: 'WebApp',
     code: 'https://github.com/diego-ggv/techdegree-project-7',
     pag: 'https://diego-ggv.github.io/techdegree-project-7/',
-    text: `An interactive dashboard for a web application using SVG graphics and Chart.js JavaScript library.`,
+    text: `An interactive dashboard for a web application that uses SVG graphics and Chart.js JavaScript library, and localStorage().`,
   },
   {
     fileName: 'Word-guess Game',
