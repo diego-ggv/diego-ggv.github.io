@@ -64,27 +64,31 @@ const imgArray = [
     fileName: 'WebApp',
     code: 'https://github.com/diego-ggv/techdegree-project-7',
     pag: 'https://diego-ggv.github.io/techdegree-project-7/',
-    text: `An interactive dashboard for a web application using SVG graphics and Chart.js JavaScript library`
+    text: `An interactive dashboard for a web application using SVG graphics and Chart.js JavaScript library.`,
   },
   {
     fileName: 'Word-guess Game',
     code: 'https://github.com/diego-ggv/techdegree-project-6',
     pag: 'https://diego-ggv.github.io/techdegree-project-6/',
+    text: `A fun web-based phrase guessing game. where players click letters from an onscreen keyboard to try to guess a random phrase`,
   },
   {
     fileName: 'Image Gallery',
     code: 'https://github.com/diego-ggv/techdegree-project-5',
     pag: 'https://diego-ggv.github.io/techdegree-project-5/',
+    text: `An interactive, searchable gallery of photos using Javascript libraries and CSS preprocessor Sass .`,
   },
   {
     fileName: 'Buttons Grid',
     code: 'https://github.com/diego-ggv/techdegree-project-4',
     pag: 'https://diego-ggv.github.io/techdegree-project-4/',
+    text: `A Sass and CSS style guide document that helps create consistent designs for web and mobile design, which defines the accepted styles and design principles for a company.`,
   },
   {
     fileName: 'Newsletter Form',
     code: 'https://github.com/diego-ggv/techdegree-project-4',
     pag: 'https://diego-ggv.github.io/techdegree-project-4/',
+    text: `A newsletter signup form for an online magazine that uses mobile-first-approach`,
   },
 ];
 

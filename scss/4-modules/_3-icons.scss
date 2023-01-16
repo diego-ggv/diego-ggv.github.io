@@ -1,5 +1,5 @@
 .icon {
-  transition: 500ms cubic-bezier(.17,.67,.83,.67);
+  transition: 200ms cubic-bezier(.17,.67,.83,.67);
   border: none;
   border-radius: 5px;
 
@@ -7,9 +7,4 @@
     transform: scale(1.2);
     background-color: rgb(255, 193, 7);
   }
-}
-
-a .work-icon:hover {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
 }
