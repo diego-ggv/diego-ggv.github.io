@@ -58,11 +58,13 @@ const imgArray = [
     fileName: 'Employee Directory',
     code: 'https://github.com/diego-ggv/techdegree-project-8',
     pag: 'https://diego-ggv.github.io/techdegree-project-8/',
+    text: `An Employee Directory that communicates with a third-party API. Using Js to dynamically add employee's cards`,
   },
   {
     fileName: 'WebApp',
     code: 'https://github.com/diego-ggv/techdegree-project-7',
     pag: 'https://diego-ggv.github.io/techdegree-project-7/',
+    text: `An interactive dashboard for a web application using SVG graphics and Chart.js JavaScript library`
   },
   {
     fileName: 'Word-guess Game',
@@ -101,12 +103,7 @@ const cards = (array) => {
           <div class="card-body">
             <h5 class="card-title bg-dark text-white text-center">${array[i].fileName}</h5>
             <p class="card-text">
-              Lorem ipsum dolor sit amet,
-              consectetuer adipiscing elit,
-              sed diam nonummy nibh euismod
-              tincidunt ut laoreet dolore
-              magna aliquam erat volutpat.
-              Ut wisi.
+              ${array[i].text}
             </p>
     
             <div class="d-flex justify-around">  
