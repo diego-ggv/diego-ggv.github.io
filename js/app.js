@@ -55,6 +55,12 @@ const typedFrontEnd = new Typed('#typedFrontEnd', typedFrontEndOpt);
 
 const imgArray = [
   {
+    fileName: 'Business card',
+    code: 'https://github.com/diego-ggv/digital-business-card',
+    pag: 'https://diego-gutierrez-card.netlify.app/',
+    text: 'Simple business card built using react'
+  },
+  {
     fileName: 'Employee Directory',
     code: 'https://github.com/diego-ggv/techdegree-project-8',
     pag: 'https://diego-ggv.github.io/techdegree-project-8/',
